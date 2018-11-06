@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<style>
+body{
+    margin:5%;
+    font-family: sans-serif;
+    border : 0;
+}
+    
+    </style>
+<body>
+    <h3>Cara menampilkan data json dengan ajax</h3>
+    <p>Data Json</p>
+    <ul id="result"></ul>
+<script>
+    function load_ajax(){
+        var ajax = new XMLHttpRequest();
+        ajax.open('GET','data.json',true);
+        ajax.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200){
+                let d = JSON.parse(this.response);
+                var data = d.data;
+                var msg = d.message;
+                console.log(msg);
+                alert("test"+msg);
+                for (var i = 0;i<data.length; i++){
+                    document.getElementById('result').innerHTML += '<li>'+data[i].name + '</li>';
+                }
+            }
+        }
+        ajax.send();
+    }
+    load_ajax();
+</script>
+</body>
+</html>

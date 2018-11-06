@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="jquery.dataTables.min.css">
+
+</head>
+<style>
+    body {
+        margin: 5%;
+        font-family: sans-serif;
+        border: 0;
+    }
+</style>
+
+<body>
+    <h3>Cara menampilkan data json dengan ajax</h3>
+    <p>Data Json</p>
+    <table id="listbiaya" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>NO.</th>
+                <th>ID</th>
+                <th>NO.</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+
+    </table>
+    <script src="jquery-1.12.0.min.js"></script>
+    <script src="jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // $.ajax({
+            //     type: "GET",
+            //     url: "http://localhost/ajax_loadjson/data.json",
+            //     dataType: "json",
+            //     beforeSend: function (e) {
+            //         if (e && e.overrideMimeType) {
+            //             e.overrideMimeType("application/json;charset=UTF-8");
+            //         }
+            //     },
+            //     success: function (d) {
+            //         var tr;
+            //         var data = d.data;
+            //         var msg = d.message;
+            //         var i = data.length;
+            //         $.each(data, function (k, res) {
+            //             tr = $("<tr></tr>");
+            //             tr.append("<td>" + res.name + "</td>");
+            //             tr.append("<td>" + res.gender + "</td>");
+            //             $("#list").append(tr);
+            //         });
+
+            //     },
+            //     error: function (xhr, ajaxOptions, thrownError) {
+            //         alert(xhr.responseText);
+            //     }
+            // });
+            $('#listbiaya').dataTable({
+                ajax: "../data.json",
+                "columns": [
+                    { "data": "name" },
+                    { "data": "gender" },
+                    { "data": "designation" }
+                ]
+            });
+            table.on('xhr', function () {
+                var json = table.ajax.json();
+                alert(json.data.length + 'rows(s) were loaded');
+            })
+        });
+
+    </script>
+
+</body>
+
+</html>

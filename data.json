@@ -1,0 +1,105 @@
+{
+  "message":"sukses",
+  "data": [
+    {
+      "name": "Michael Bruce",
+      "gender": "Male",
+      "designation": "System Architect"
+    },
+    {
+      "name": "Jennifer Winters",
+      "gender": "Female",
+      "designation": "Senior Programmer"
+    },
+    {
+      "name": "Donna Fox",
+      "gender": "Female",
+      "designation": "Office Manager"
+    },
+    {
+      "name": "Howard Hatfield",
+      "gender": "Male",
+      "designation": "Customer Support"
+    },
+    {
+      "name": "nova",
+      "gender": "Male",
+      "designation": "Customer Support"
+    },
+    {
+      "name": "Michael Bruce",
+      "gender": "Male",
+      "designation": "System Architect"
+    },
+    {
+      "name": "Jennifer Winters",
+      "gender": "Female",
+      "designation": "Senior Programmer"
+    },
+    {
+      "name": "Donna Fox",
+      "gender": "Female",
+      "designation": "Office Manager"
+    },
+    {
+      "name": "Howard Hatfield",
+      "gender": "Male",
+      "designation": "Customer Support"
+    },
+    {
+      "name": "nova",
+      "gender": "Male",
+      "designation": "Customer Support"
+    },
+    {
+      "name": "Michael Bruce",
+      "gender": "Male",
+      "designation": "System Architect"
+    },
+    {
+      "name": "Jennifer Winters",
+      "gender": "Female",
+      "designation": "Senior Programmer"
+    },
+    {
+      "name": "Donna Fox",
+      "gender": "Female",
+      "designation": "Office Manager"
+    },
+    {
+      "name": "Howard Hatfield",
+      "gender": "Male",
+      "designation": "Customer Support"
+    },
+    {
+      "name": "nova",
+      "gender": "Male",
+      "designation": "Customer Support"
+    },
+    {
+      "name": "Michael Bruce",
+      "gender": "Male",
+      "designation": "System Architect"
+    },
+    {
+      "name": "Jennifer Winters",
+      "gender": "Female",
+      "designation": "Senior Programmer"
+    },
+    {
+      "name": "Donna Fox",
+      "gender": "Female",
+      "designation": "Office Manager"
+    },
+    {
+      "name": "Howard Hatfield",
+      "gender": "Male",
+      "designation": "Customer Support"
+    },
+    {
+      "name": "nova",
+      "gender": "Male",
+      "designation": "Customer Support"
+    }
+  ]
+}
